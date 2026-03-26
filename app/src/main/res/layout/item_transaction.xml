@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+
+    app:cardCornerRadius="18dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Icon circle -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            app:cardCornerRadius="24dp"
+            app:cardBackgroundColor="#EEF2FF"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/imgCategory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:src="@android:drawable/ic_menu_info_details"
+                app:tint="#2563EB"/>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- Text section -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:layout_marginStart="14dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Food"
+                android:textColor="#111827"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Lunch with friends"
+                android:textColor="#6B7280"
+                android:textSize="13sp"
+
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="12 May 2026"
+                android:textColor="#9CA3AF"
+                android:textSize="12sp"
+
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+
+        <!-- Amount -->
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="$20"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            android:textColor="#EF4444"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
